@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "redirect-graph"
+version = "0.1.0"
+description = "Offline exact-path redirect graph audit for loops, excess hops and missing destinations."
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+readme = "README.md"
+dependencies = []
+[project.scripts]
+redirect-graph = "redirect_graph:main"
+[tool.setuptools]
+py-modules = ["redirect_graph"]
